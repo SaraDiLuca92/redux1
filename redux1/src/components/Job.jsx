@@ -8,7 +8,6 @@ const Job = ({ data }) => {
   const cart = useSelector((state) => state);
   console.log(cart);
   const dispatch = useDispatch();
-  console.log(dispatch);
 
   return (
     <Row

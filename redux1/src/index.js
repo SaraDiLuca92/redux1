@@ -7,15 +7,9 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import Reducer from "./components/company/Reducer";
 
-const rootReducer = combineReducers({
-  todos: () => [1, 2, 3],
-  counter: () => 123,
-});
 export const store = configureStore({
-  reducer: rootReducer,
+  reducer: Reducer,
 });
-
-export type RootState = ReturnType<typeof rootReducer>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
