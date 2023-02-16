@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Job from "./Job";
+import Job from "../Job";
 import { useParams } from "react-router-dom";
+
+import "./company.css";
 
 const CompanySearchResults = () => {
   const [jobs, setJobs] = useState([]);
@@ -34,7 +36,7 @@ const CompanySearchResults = () => {
         <Col>
           {jobs.map((jobData) => (
             <Job key={jobData._id} data={jobData} />
-          ))}
+          ))}{" "}
         </Col>
       </Row>
     </Container>

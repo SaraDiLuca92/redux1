@@ -1,18 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-const initialState = {
-  favItems: [],
-  favTtotal: 0,
-  favTotalAmount: 0,
+const Favourites = (props) => {
+  return <h1>fav</h1>;
 };
-const favSlice = createSlice({
-  name: "favourites",
-  initialState,
-  reducers: {
-    addToFav(state, action) {
-      state.favItems.push(action.payload);
-    },
-  },
-});
-export const { addToFav } = favSlice.actions;
-export default favSlice.reducer;
+export default Favourites;

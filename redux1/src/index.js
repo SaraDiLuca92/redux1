@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
+import Reducer from "./components/company/Reducer";
 
 const rootReducer = combineReducers({
   todos: () => [1, 2, 3],
