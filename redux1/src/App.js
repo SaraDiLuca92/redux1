@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainSearch />} />
-        <Route path="/:companyName" element={<CompanySearchResults />} />
+        <Route path="/:company" element={<CompanySearchResults />} />
       </Routes>
     </BrowserRouter>
   );
